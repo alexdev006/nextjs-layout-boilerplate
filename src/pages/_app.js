@@ -1,0 +1,13 @@
+import '@/styles/globals.css';
+import Layout from '../../components/Layout.jsx';
+
+export default function App({ Component, pageProps }) {
+  return (
+    <Layout>
+      {/* !!important */}
+      <div className="mb-auto">
+        <Component {...pageProps} />
+      </div>
+    </Layout>
+  );
+}
